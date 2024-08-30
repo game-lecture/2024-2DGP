@@ -1,0 +1,6 @@
+Slides/** filter=lfs diff=lfs merge=lfs -text
+Drills/** filter=lfs diff=lfs merge=lfs -text
+Exams/** filter=lfs diff=lfs merge=lfs -text
+OldStuffs/** filter=lfs diff=lfs merge=lfs -text
+References/** filter=lfs diff=lfs merge=lfs -text
+
