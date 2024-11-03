@@ -22,8 +22,7 @@ class Idle:
 
     @staticmethod
     def exit(boy, e):
-        if space_down(e):
-            boy.fire_ball()
+        pass
 
     @staticmethod
     def do(boy):
@@ -73,8 +72,7 @@ class Run:
 
     @staticmethod
     def exit(boy, e):
-        if space_down(e):
-            boy.fire_ball()
+        pass
 
 
     @staticmethod
