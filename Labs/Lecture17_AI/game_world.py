@@ -1,21 +1,21 @@
-objects = [[] for _ in range(4)]
+world = [[] for _ in range(4)]
 collision_pairs = {}
 
 def add_object(o, depth = 0):
-    objects[depth].append(o)
+    world[depth].append(o)
 
 def add_objects(ol, depth = 0):
-    objects[depth] += ol
+    world[depth] += ol
 
 
 def update():
-    for layer in objects:
+    for layer in world:
         for o in layer:
             o.update()
 
 
 def render():
-    for layer in objects:
+    for layer in world:
         for o in layer:
             o.draw()
 
@@ -28,7 +28,7 @@ def remove_collision_object(o):
 
 
 def remove_object(o):
-    for layer in objects:
+    for layer in world:
         if o in layer:
             layer.remove(o)
             remove_collision_object(o)
@@ -38,8 +38,9 @@ def remove_object(o):
 
 
 def clear():
-    for layer in objects:
+    for layer in world:
         layer.clear()
+    collision_pairs.clear()
 
 
 def collide(a, b):
