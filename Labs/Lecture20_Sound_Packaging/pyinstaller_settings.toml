@@ -1,0 +1,13 @@
+# pyinstaller 로 exe 를 build 하기 위한 설정
+
+# 1. 메인 파일 이름을 지정하세요.
+main_file = ''
+
+# 2. 데이타 파일들을 지정하세요.
+data_files = [
+]
+
+# 3. 데이타가 들어있는 폴더들을 지정하세요.
+data_folders = [
+]
+
